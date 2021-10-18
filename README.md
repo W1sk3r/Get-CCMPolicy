@@ -10,86 +10,86 @@ SCCM Powershell Policy Tool
 
 `Can be run via Powershell command line, or executed without any policy to run and will launch a GUI that can be used and reused for other computers.`
 
-**.DESCRIPTION**
+#
+`.DESCRIPTION`
 
 `SCCM Policy Check Tool. Will run across multiple computers listed ($ComputerName accepts multiple). `
 `Can be run via Powershell command line, or executed without any policy to run and will launch a GUI that can be used and reused for other computers.`
 
+#
 
-**.PARAMETER ComputerName**
+`.PARAMETER ComputerName`
 
 `Computer, or list of computers to run SCCM policies against.`
 
+#
+`.PARAMETER AppEvaluation`
 
-**.PARAMETER AppEvaluation**
+`Runs the Application Evaluation cycle`
+#
+`.PARAMETER CheckPolicy`
 
-Runs the Application Evaluation cycle
+`Runs the Machine Policy check from SCCM.`
 
+#
+`.PARAMETER SWUpdateScanCycle`
 
-**.PARAMETER CheckPolicy**
+`Runs the Software Update Scan Cycle`
 
-Runs the Machine Policy check from SCCM.
+#
+`.PARAMETER SWUpdateEvaluation`
 
+`Runs the Software Update Evaluation Cycle`
 
-**.PARAMETER SWUpdateScanCycle**
+#
+`.PARAMETER HardwareInventory`
 
-Runs the Software Update Scan Cycle
+`Runs the hardware inventory cycle.`
 
+#
+`.PARAMETER ScanType`
 
-**.PARAMETER SWUpdateEvaluation**
+`Same as the above parameters, but lets you choose a combination of policy checks instead:`
+ `'1 - AppEval and Policy',`
 
-Runs the Software Update Evaluation Cycle
-
-
-**.PARAMETER HardwareInventory**
-
-Runs the hardware inventory cycle.
-
-
-**.PARAMETER ScanType**
-
-Same as the above parameters, but lets you choose a combination of policy checks instead:
- '1 - AppEval and Policy',
+ `'2 - Policy',`
  
- '2 - Policy',
+ `'3 - AppEval',`
  
- '3 - AppEval',
+ `'4 - HWInv',`
  
- '4 - HWInv',
+ `'5 - SWUpdateScan',`
  
- '5 - SWUpdateScan',
+ `'6 - SWUpdateEval',`
  
- '6 - SWUpdateEval',
+ `'7 - All, No HWInv'`
  
- '7 - All, No HWInv'
+# 
  
- 
- 
-**.PARAMETER ResetSCCMPolicy**
+`.PARAMETER ResetSCCMPolicy`
 
-Resets the SCCM Policy back to default. 
-Recommend running CheckPolicy afterward to speed things along.
+`Resets the SCCM Policy back to default. Recommend running CheckPolicy afterward to speed things along.`
 
+#
+`.EXAMPLE`
 
-**.EXAMPLE**
+`.\Get-CCMPolicy.ps1 -ComputerName "MyPC" -AppEvaluation -CheckPolicy`
+#
+`.EXAMPLE`
 
-.\Get-CCMPolicy.ps1 -ComputerName "MyPC" -AppEvaluation -CheckPolicy
+`.\Get-CCMPolicy.ps1 -ComputerName "MyPC"`
+`#This will launch the GUI, with "MyPC" listed in the computers to check against.`
+#
+`.EXAMPLE`
 
-**.EXAMPLE**
+`.\Get-CCMPolicy.ps1 -ComputerName "MyPC", "YourPC", "TheirPC"`
+`#This will launch the GUI, with "MyPC", "YourPC" and "TheirPC" listed in the computers to check against.`
+#
+`.NOTES`
 
-.\Get-CCMPolicy.ps1 -ComputerName "MyPC"
-#This will launch the GUI, with "MyPC" listed in the computers to check against.
+`General notes`
 
-**.EXAMPLE**
+`Author: Jonathan Caum`
 
-.\Get-CCMPolicy.ps1 -ComputerName "MyPC", "YourPC", "TheirPC"
-#This will launch the GUI, with "MyPC", "YourPC" and "TheirPC" listed in the computers to check against.
+`Last Updated: 10/18/2021`
 
-**.NOTES**
-
-General notes
-
-Author: Jonathan Caum
-
-Last Updated: 10/18/2021
-`
