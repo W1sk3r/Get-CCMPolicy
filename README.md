@@ -5,6 +5,7 @@ SCCM Powershell Policy Tool
 
 
 .SYNOPSIS
+
 SCCM Policy Check Tool. Will run across multiple computers listed ($ComputerName accepts multiple). 
 
 Can be run via Powershell command line, or executed without any policy to run and will launch a GUI that can be used and reused for other computers.
