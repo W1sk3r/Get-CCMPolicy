@@ -420,7 +420,6 @@ AAABAAEAICAQMwAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA
         }
     }
 
- 
     # create OK button
     $okbutton1 = New-Object system.Windows.Forms.Button
     $okbutton1.text = "O&K"
@@ -472,7 +471,6 @@ AAABAAEAICAQMwAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA
     $label1.width = 205
     $label1.height = 13
     $panel1.controls.add($label1)
-
     
     # create text box
     $text1 = New-Object System.Windows.Forms.TextBox
