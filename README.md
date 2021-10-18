@@ -3,22 +3,22 @@ SCCM Powershell Policy Tool
 
 ![GUI](https://github.com/W1sk3r/Get-CCMPolicy/blob/main/Screenshots/Gui%20-%202021-10-18.png?raw=true)
 
-`
+
 **.SYNOPSIS**
 
-SCCM Policy Check Tool. Will run across multiple computers listed ($ComputerName accepts multiple). 
+`SCCM Policy Check Tool. Will run across multiple computers listed ($ComputerName accepts multiple). `
 
-Can be run via Powershell command line, or executed without any policy to run and will launch a GUI that can be used and reused for other computers.
+`Can be run via Powershell command line, or executed without any policy to run and will launch a GUI that can be used and reused for other computers.`
 
 **.DESCRIPTION**
 
-SCCM Policy Check Tool. Will run across multiple computers listed ($ComputerName accepts multiple). 
-Can be run via Powershell command line, or executed without any policy to run and will launch a GUI that can be used and reused for other computers.
+`SCCM Policy Check Tool. Will run across multiple computers listed ($ComputerName accepts multiple). `
+`Can be run via Powershell command line, or executed without any policy to run and will launch a GUI that can be used and reused for other computers.`
 
 
 **.PARAMETER ComputerName**
 
-Computer, or list of computers to run SCCM policies against.
+`Computer, or list of computers to run SCCM policies against.`
 
 
 **.PARAMETER AppEvaluation**
