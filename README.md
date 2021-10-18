@@ -3,6 +3,8 @@ SCCM Powershell Policy Tool
 
 ![GUI](https://github.com/W1sk3r/Get-CCMPolicy/blob/main/Screenshots/Gui%20-%202021-10-18.png?raw=true)
 
+![Cmd Line](https://github.com/W1sk3r/Get-CCMPolicy/blob/main/Screenshots/Screenshot%202021-10-18%20100519.png?raw=true)
+
 
 `.SYNOPSIS`
 
