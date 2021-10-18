@@ -503,7 +503,7 @@ AAABAAEAICAQMwAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA
 
     # Version String
     $version = New-Object System.Windows.Forms.Label
-    $version.text = "Version: 20200518"
+    $version.text = "Version: 20211018"
     $version.width = 120
     $version.height = 18
     $version.BackColor = [System.Drawing.Color]::FromName("Transparent")
