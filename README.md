@@ -50,12 +50,19 @@ Runs the hardware inventory cycle.
 
 Same as the above parameters, but lets you choose a combination of policy checks instead:
  '1 - AppEval and Policy',
+ 
  '2 - Policy',
+ 
  '3 - AppEval',
+ 
  '4 - HWInv',
+ 
  '5 - SWUpdateScan',
+ 
  '6 - SWUpdateEval',
+ 
  '7 - All, No HWInv'
+ 
  
  
 .PARAMETER ResetSCCMPolicy
@@ -79,6 +86,9 @@ Recommend running CheckPolicy afterward to speed things along.
 #This will launch the GUI, with "MyPC", "YourPC" and "TheirPC" listed in the computers to check against.
 
 .NOTES
+
 General notes
+
 Author: Jonathan Caum
+
 Last Updated: 10/18/2021
