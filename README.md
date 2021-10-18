@@ -3,7 +3,7 @@ SCCM Powershell Policy Tool
 
 ![GUI](https://github.com/W1sk3r/Get-CCMPolicy/blob/main/Screenshots/Gui%20-%202021-10-18.png?raw=true)
 
-
+`
 **.SYNOPSIS**
 
 SCCM Policy Check Tool. Will run across multiple computers listed ($ComputerName accepts multiple). 
@@ -92,3 +92,4 @@ General notes
 Author: Jonathan Caum
 
 Last Updated: 10/18/2021
+`
