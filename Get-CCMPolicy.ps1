@@ -452,6 +452,7 @@ AAABAAEAICAQMwAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA
     $importbutton1.width = 75
     $importbutton1.top = $($form1.height - $importbutton1.Height - $importbutton1.height - 25)
     $importbutton1.left = 11
+    $showhelp = $tooltip1.SetToolTip($importbutton1, "Import a list of computers from a text file, separated by line breaks.")
     if ($importbutton1.CanFocus) {
         $importbutton1.Focus();
     }
