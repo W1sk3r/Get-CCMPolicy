@@ -29,37 +29,48 @@ $script:rerun = ""
 
 <#
 .SYNOPSIS
+SCCM Policy Check Tool. Will run across multiple computers listed ($ComputerName accepts multiple). 
 
+Can be run via Powershell command line, or executed without any policy to run and will launch a GUI that can be used and reused for other computers.
 
 .DESCRIPTION
-Long description
+SCCM Policy Check Tool. Will run across multiple computers listed ($ComputerName accepts multiple). 
+
+Can be run via Powershell command line, or executed without any policy to run and will launch a GUI that can be used and reused for other computers.
 
 .PARAMETER ComputerName
-Parameter description
+Computer, or list of computers to run SCCM policies against.
 
 .PARAMETER AppEvaluation
-Parameter description
+Runs the Application Evaluation cycle
 
 .PARAMETER CheckPolicy
-Parameter description
+Runs the Machine Policy check from SCCM.
 
 .PARAMETER SWUpdateScanCycle
-Parameter description
+Runs the Software Update Scan Cycle
 
 .PARAMETER SWUpdateEvaluation
-Parameter description
+Runs the Software Update Evaluation Cycle
 
 .PARAMETER HardwareInventory
-Parameter description
+Runs the hardware inventory cycle.
 
 .PARAMETER ScanType
 Parameter description
 
 .EXAMPLE
-An example
+.\Get-CCMPolicy.ps1 -ComputerName "MyPC" -AppEvaluation -CheckPolicy
+
+.EXAMPLE
+.\Get-CCMPolicy.ps1 -ComputerName "MyPC"
 
 .NOTES
 General notes
+Author: Jonathan Caum
+Last Updated: 10/18/2021
+
+
 #>
 
 
